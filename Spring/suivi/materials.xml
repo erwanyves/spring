@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+	<!-- Liste des matériaux encodés -->
+	<material>
+		<name>ACIER</name>
+		<moduleG>8000</moduleG>
+		<dmax>12.0</dmax>
+		<travail >2</travail>
+		<taux_service>
+			<leger>
+				<bas>55.0</bas><!--en dessous de 0.5 -->
+				<haut>45.0</haut><!--au dessus de 0.5 -->
+			</leger>
+			<moyen>
+				<bas>45.0</bas>
+				<haut>35.0</haut>
+			</moyen>
+			<severe>
+				<bas>1.0</bas>
+				<haut>1.0</haut>
+			</severe>	
+		</taux_service>
+		<taux_maxi_jointif>120.0</taux_maxi_jointif>
+		<taux_spires_jointes>
+			<coef1>-0.0599630279897392</coef1>
+			<puissance1>3.0</puissance1>
+			<coef2>1.6699209711749</coef2>
+			<puissance2>2.0</puissance2>
+			<coef3>-17.4282225590165</coef3>
+			<puissance3>1.0</puissance3>
+			<coef4>127.294099037653</coef4>
+			<puissance4>0.0</puissance4>
+		</taux_spires_jointes>
+		<aspect>
+			<diffuse>(0.00, 0.00, 0.00)</diffuse>
+			<ambient>(0.00, 0.00, 0.00)</ambient>
+			<emissive>(0.00, 0.00, 0.00)</emissive>
+			<specular>(0.98, 0.98, 0.98)</specular>
+			<shininess>0.02</shininess>
+			<transparency>0.00</transparency>
+		</aspect>
+	</material>
+	<material>
+		<name>INOX</name>
+		<moduleG>7000</moduleG>
+		<dmax>12.0</dmax>
+		<travail >3</travail>
+		<taux_service>
+			<leger>
+				<bas>55.0</bas><!--en dessous de 0.5 -->
+				<haut>45.0</haut><!--au dessus de 0.5 -->
+			</leger>
+			<moyen>
+				<bas>45.0</bas>
+				<haut>35.0</haut>
+			</moyen>
+			<severe>
+				<bas>40.0</bas>
+				<haut>30.0</haut>
+			</severe>	
+		</taux_service>
+		<taux_maxi_jointif>105.0</taux_maxi_jointif>
+		<taux_spires_jointes>
+			<coef1>-0.0602199780020853</coef1>
+			<puissance1>3.0</puissance1>
+			<coef2>1.69285965450035</coef2>
+			<puissance2>2.0</puissance2>
+			<coef3>-16.7925003263422</coef3>
+			<puissance3>1.0</puissance3>
+			<coef4>111.800011104286</coef4>
+			<puissance4>0.0</puissance4>
+		</taux_spires_jointes>
+		<aspect>
+			<diffuse>(0.00, 0.00, 0.00)</diffuse>
+			<ambient>(0.29, 0.29, 0.29)</ambient>
+			<emissive>(0.00, 0.00, 0.00)</emissive>
+			<specular>(0.98, 0.98, 0.98)</specular>
+			<shininess>0.02</shininess>
+			<transparency>0.00</transparency>
+		</aspect>
+	</material>
+	<material>
+		<name>CORDE A PIANO</name>
+		<moduleG>8200</moduleG>
+		<dmax>6.0</dmax>
+		<travail >3</travail>
+		<taux_service>
+			<leger>
+				<bas>85.0</bas><!--en dessous de 0.5 -->
+				<haut>70.0</haut><!--au dessus de 0.5 -->
+			</leger>
+			<moyen>
+				<bas>70.0</bas>
+				<haut>60.0</haut>
+			</moyen>
+			<severe>
+				<bas>60.0</bas>
+				<haut>50.0</haut>
+			</severe>	
+		</taux_service>
+		<taux_maxi_jointif>150.0</taux_maxi_jointif>
+		<taux_spires_jointes>
+			<coef1>-0.215237153676016</coef1>
+			<puissance1>3.0</puissance1>
+			<coef2>3.21689001735628</coef2>
+			<puissance2>2.0</puissance2>
+			<coef3>-23.7824092914399</coef3>
+			<puissance3>1.0</puissance3>
+			<coef4>158.367130742665</coef4>
+			<puissance4>0.0</puissance4>
+		</taux_spires_jointes>
+		<aspect>
+			<diffuse>(0.00, 0.00, 0.00)</diffuse>
+			<ambient>(0.00, 0.00, 0.00)</ambient>
+			<emissive>(0.00, 0.00, 0.00)</emissive>
+			<specular>(0.98, 0.98, 0.98)</specular>
+			<shininess>0.06</shininess>
+			<transparency>0.00</transparency>
+		</aspect>
+	</material>
+	<material>
+		<name>LAITON</name>
+		<moduleG>3500</moduleG>
+		<dmax>6.0</dmax>
+		<travail >2</travail>
+		<taux_service>
+			<leger>
+				<bas>35.0</bas><!--en dessous de 0.5 -->
+				<haut>25.0</haut><!--au dessus de 0.5 -->
+			</leger>
+			<moyen>
+				<bas>25.0</bas>
+				<haut>20.0</haut>
+			</moyen>
+			<severe>
+				<bas>1.0</bas>
+				<haut>1.0</haut>
+			</severe>	
+		</taux_service>
+		<taux_maxi_jointif>70.0</taux_maxi_jointif>
+		<taux_spires_jointes>
+			<coef1>51.477408411778</coef1>
+			<puissance1>-0.318437217759918</puissance1>
+			<coef2>0.0</coef2>
+			<puissance2>1.0</puissance2>
+			<coef3>0.0</coef3>
+			<puissance3>1.0</puissance3>
+			<coef4>0.0</coef4>
+			<puissance4>1.0</puissance4>
+		</taux_spires_jointes>
+		<aspect>
+			<diffuse>(0.78, 0.56, 0.11)</diffuse>
+			<ambient>(0.33, 0.22, 0.03)</ambient>
+			<emissive>(0.00, 0.00, 0.00)</emissive>
+			<specular>(0.99, 0.94, 0.80)</specular>
+			<shininess>0.22</shininess>
+			<transparency>0.00</transparency>
+		</aspect>		
+	</material>
+	<material>
+		<name>BRONZE PHOSPHOREUX</name>
+		<moduleG>4400</moduleG>
+		<dmax>12.0</dmax>
+		<travail >3</travail>
+		<taux_service>
+			<leger>
+				<bas>45.0</bas><!--en dessous de 0.5 -->
+				<haut>35.0</haut><!--au dessus de 0.5 -->
+			</leger>
+			<moyen>
+				<bas>35.0</bas>
+				<haut>30.0</haut>
+			</moyen>
+			<severe>
+				<bas>25.0</bas>
+				<haut>20.0</haut>
+			</severe>	
+		</taux_service>
+		<taux_maxi_jointif>90.0</taux_maxi_jointif>
+		<taux_spires_jointes>
+			<coef1>-0.0860585125351691</coef1>
+			<puissance1>3.0</puissance1>
+			<coef2>2.59533417697019</coef2>
+			<puissance2>2.0</puissance2>
+			<coef3>-22.9955165171103</coef3>
+			<puissance3>1.0</puissance3>
+			<coef4>98.1187943551692</coef4>
+			<puissance4>0.0</puissance4>
+		</taux_spires_jointes>
+		<aspect>
+			<diffuse>(0.71, 0.43, 0.18)</diffuse>
+			<ambient>(0.21, 0.13, 0.05)</ambient>
+			<emissive>(0.00, 0.00, 0.00)</emissive>
+			<specular>(0.39, 0.27, 0.16)</specular>
+			<shininess>0.20</shininess>
+			<transparency>0.00</transparency>
+		</aspect>
+	</material>
+	<material>
+		<name>BRONZE BERILLIUM</name>
+		<moduleG>4800</moduleG>
+		<dmax>12.0</dmax>
+		<travail >3</travail>
+		<taux_service>
+			<leger>
+				<bas>50.0</bas><!--en dessous de 0.5 -->
+				<haut>40.0</haut><!--au dessus de 0.5 -->
+			</leger>
+			<moyen>
+				<bas>45.0</bas>
+				<haut>35.0</haut>
+			</moyen>
+			<severe>
+				<bas>35.0</bas>
+				<haut>30.0</haut>
+			</severe>	
+		</taux_service>
+		<taux_maxi_jointif>105.0</taux_maxi_jointif>
+		<taux_spires_jointes>
+			<coef1>-0.0602199780020853</coef1>
+			<puissance1>3.0</puissance1>
+			<coef2>1.69285965450035</coef2>
+			<puissance2>2.0</puissance2>
+			<coef3>-16.7925003263422</coef3>
+			<puissance3>1.0</puissance3>
+			<coef4>111.800011104286</coef4>
+			<puissance4>0.0</puissance4>
+		</taux_spires_jointes>
+		<aspect>
+			<diffuse>(0.71, 0.43, 0.18)</diffuse>
+			<ambient>(0.21, 0.13, 0.05)</ambient>
+			<emissive>(0.00, 0.00, 0.00)</emissive>
+			<specular>(0.39, 0.27, 0.16)</specular>
+			<shininess>0.20</shininess>
+			<transparency>0.00</transparency>
+		</aspect>
+	</material>
+	<liste_diametres> (0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.8, 0.85, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.2, 2.5, 2.8, 3.0, 3.5, 3.8, 4.0, 4.2, 4.5, 4.8, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 10.0, 11.0, 12.0)</liste_diametres>
+</data>
+	
+

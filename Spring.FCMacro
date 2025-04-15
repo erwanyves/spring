@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+""" FreeCAD Macro defining a compression spring """
+__author__      = "Yves Guillou"
+__licence__     = "GPL"
+
+import FreeCAD as App
+import FreeCADGui as Gui
+import Part
+from   PySide                     import QtGui, QtCore
+from   PySide.QtGui               import QInputDialog, QAbstractButton 
+from   Spring.SpringDataModule    import DataSet
+from   Spring.SpringModule        import Spring
+from   Spring.SpringDialogsModule import dialogSpringStatus, dialogMissingCsvOds, dialogMissingCsv
+
+
+def refresh():
+	Gui.Selection.clearSelection()
+	App.activeDocument().recompute(None,True,True)
+	Gui.SendMsgToActiveView("ViewFit")
+		
+data = DataSet()
+if not data.missingCsv and data.locPathFound:
+	if (((data.existOds or data.existCsv) and data.findSpring())) or data.newFile: 
+		if data.locPathFound == True and data.filePath != "":
+			Spring.bodyName = 'Spring'
+			piece = App.activeDocument().addObject('PartDesign::Body', Spring.bodyName)
+			#Gui.Selection.addSelection(piece)
+			bodyTest = piece.Name
+			piece = App.ActiveDocument.getObject(Spring.bodyName)
+			if bodyTest == Spring.bodyName:
+				data.initParameters(piece)
+				try: 
+					if len(piece.representation) > 30 :
+						data.copyNew()
+				except:
+					pass
+			else:
+				data.config = piece.representation
+				App.ActiveDocument.removeObject(bodyTest)
+				piece = App.ActiveDocument.getObject(Spring.bodyName)
+				choix = dialogSpringStatus(data, piece)
+				if choix == "open":  
+					data.openLibreOfficeCalc()
+				elif choix == "ok":
+					piece =  App.ActiveDocument.getObject(Spring.bodyName)
+					data.config = piece.representation  
+					piece.removeObjectsFromDocument()
+					data.initParameters(piece)
+					spring = Spring(data,piece)
+					piece.representation = data.config
+				data.newFile = True
+		refresh()
+	else:
+		dialogMissingCsvOds()
+else:
+	if data.missingCsv:
+		dialogMissingCsv()
+		data.openLibreOfficeCalc()			
